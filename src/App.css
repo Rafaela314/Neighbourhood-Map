@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color:white;
+}
+
+.venue-item {
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid grey;
+}
+
+.venue-item:hover {
+  color: white;
+  background: #cc0000;
+
+}
+
+#root, #app, #map {
+  height: 100%;
+}
+
+#state {
+  width: 200px;
+  float: left;
+}
+
+#map {
+  margin-left: 200px;
+  position: static !important;
+
+}
+
+
+#sidebar {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  max-width: 100%;
+  height: 200vh;
+  overflow-y: scroll;
+  top: 0;
+  background: #f2f2f2;
+  box-shadow: 0px 1px 1px grey;
+
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background-color:  lightblue;
+  }
+
+  #sidebar {
+    float: float;
+    width: 100%;
+    height: 50%;
+  }
+
+  .venue-item {
+    left: calc(50% - 177px);
+    font-size: 1.0em;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
